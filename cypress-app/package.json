@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cy": "cypress open"
+    "cy": "cypress open",
+    "cy:cli": "cypress run --headless",
+    "cy:report": "cypress run --reporter junit --reporter-options mochaFile=junit.xml,toConsole=true"
   },
   "author": "",
   "license": "ISC",
