@@ -1,7 +1,4 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
+# azure pipeline for cypress
 
 trigger:
 - main
@@ -20,5 +17,7 @@ steps:
     npm install
   displayName: 'npm install cypress-app'
   
-- script: npm run cy:cli    
+- script: |
+    cd cypress-app
+    npm run cy:cli    
   displayName: 'run cypress test for chrome'

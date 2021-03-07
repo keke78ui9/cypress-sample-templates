@@ -37,3 +37,8 @@ https://docs.cypress.io/guides/references/configuration.html#Folders-Files
     + edge
     + electron
     + firefox
+
+# OS
+    + macOS
+    + Linux
+    + Windows    
